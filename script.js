@@ -1,4 +1,3 @@
-
 document.getElementById('send-button').addEventListener('click', () => {
     const userInput = document.getElementById('user-input').value;
     if (userInput.trim() !== "") {
@@ -36,4 +35,3 @@ function getBotResponse(userInput) {
         addChatMessage(botResponse, 'bot');
     }, 500);
 }
-
