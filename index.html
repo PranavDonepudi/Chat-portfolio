@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranav Donepudi's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="navbar-brand">Pranav Donepudi's Portfolio</a>
+            <a href="#" class="navbar-brand"> <h1>Portfolio</h1></a>
         </div>
     </nav>
     <div class="container">
@@ -24,17 +25,35 @@
                 <button id="send-button">Send</button>
             </div>
         </div>
+        <div class="options-container" id="options-container">
+            <button class="option-button" onclick="sendOptionMessage('Tell me about your projects')">Projects</button>
+            <button class="option-button" onclick="sendOptionMessage('Tell me about your experience')">Experience</button>
+            <button class="option-button" onclick="sendOptionMessage('Contact information')">Contact</button>
+        </div>
         <div class="profile">
             <h2>Resume</h2>
             <div class="resume">
                 <div class="image-container">
                     <img src="IMG_5162.JPG" alt="Profile Picture">
                 </div>
-                <h3>Project 1</h3>
-                <p>Project description goes here.</p>
+            </div>
+            <div class="pdf-container">
+                <iframe src="Resume-3.pdf" width="100%" height="500px">
+                    This browser does not support PDFs. Please download the PDF to view it: <a href="Resume-3.pdf">Download PDF</a>.
+                </iframe>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pranav Donepudi. All rights reserved.</p>
+            <p>
+                <a href="https://www.linkedin.com/in/pranavdonepudi07/" target="_blank">LinkedIn</a> |
+                <a href="mailto:pd53@rice.edu">Email</a> |
+                <a href="tel:+16507594788">Phone</a>
+            </p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

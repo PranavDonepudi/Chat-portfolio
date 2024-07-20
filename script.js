@@ -24,8 +24,9 @@ function addChatMessage(message, sender) {
 
 function getBotResponse(userInput) {
     const responses = {
-        "hello": "Hello! How can I help you today?",
-        "portfolio": "Sure! Here are some details about my portfolio...",
+        "tell me about your projects": "Sure! Here are some details about my projects...I have worked on multiple projects which involve full-stack development. Pac-man game designed using dynamic website structure using the Spark Java framework and hosted in Heroku.",
+        "tell me about your experience": "Worked in DXC Technology and delivered projects for Britannia for over 2 years. Currently working as an Intern in SBS Corps.",
+        "contact information": "You can reach me via LinkedIn, Email, or Phone.....link down below.",
         "default": "I'm not sure how to respond to that."
     };
 
@@ -33,4 +34,9 @@ function getBotResponse(userInput) {
     setTimeout(() => {
         addChatMessage(botResponse, 'bot');
     }, 500);
+}
+
+function sendOptionMessage(optionMessage) {
+    document.getElementById('user-input').value = optionMessage;
+    document.getElementById('send-button').click();
 }

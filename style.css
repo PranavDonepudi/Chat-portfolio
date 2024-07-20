@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2edbf2; /* Change background color */
+    background-color: #e0f7fa; /* Change background color */
     margin: 0;
     color: #333;
 }
@@ -98,6 +98,26 @@ body {
     background-color: #0056b3;
 }
 
+.options-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.option-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+}
+
 .profile {
     text-align: center;
 }
@@ -111,16 +131,21 @@ body {
 .image-container {
     width: 150px; /* Set the width for the profile picture */
     height: 150px; /* Set the height for the profile picture */
+    transition: transform 0.3s ease;
     overflow: hidden; /* Hide the overflow */
     border-radius: 50%; /* Make it a circle */
     margin: 0 auto 20px; /* Center the image and add bottom margin */
 }
 
 .image-container img {
-    width: 5%;
-    height: 5%;
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* This will crop the image */
     object-position: center; /* Center the image */
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
 }
 
 .projects {
@@ -149,4 +174,22 @@ body {
     to {
         opacity: 1;
     }
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
