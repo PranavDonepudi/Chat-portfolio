@@ -26,7 +26,6 @@ function getBotResponse(userInput) {
     const responses = {
         "hello": "Hello! How can I help you today?",
         "portfolio": "Sure! Here are some details about my portfolio...",
-        // Add more predefined responses here
         "default": "I'm not sure how to respond to that."
     };
 
