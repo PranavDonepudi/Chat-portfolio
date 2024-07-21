@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranav Donepudi's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pranav Donepudi's Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="navbar-brand"> <h1>Portfolio</h1></a>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="intro">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Pranav Donepudi. Here's a quick chat to learn more about me and my work.</p>
-        </div>
-        <div class="chat-container">
-            <div class="chat-box" id="chat-box"></div>
-            <div class="input-container">
-                <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
-                <button id="send-button">Send</button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio</a>
             </div>
-        </div>
-        <div class="options-container" id="options-container">
-            <button class="option-button" onclick="sendOptionMessage('Tell me about your projects')">Projects</button>
-            <button class="option-button" onclick="sendOptionMessage('Tell me about your experience')">Experience</button>
-            <button class="option-button" onclick="sendOptionMessage('Contact information')">Contact</button>
-        </div>
-        <div class="profile">
-            <h2>Resume</h2>
-            <div class="resume">
-                <div class="image-container">
-                    <img src="IMG_5162.JPG" alt="Profile Picture">
+        </nav>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Hi, I'm Pranav Donepudi. Here's a quick chat to learn more about me and my work.</p>
                 </div>
             </div>
-            <div class="pdf-container">
-                <iframe src="Resume-3.pdf" width="100%" height="500px">
-                    This browser does not support PDFs. Please download the PDF to view it: <a href="Resume-3.pdf">Download PDF</a>.
-                </iframe>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="chat-container">
+                        <div class="chat-box border rounded p-3 mb-3" id="chat-box"></div>
+                        <div class="input-group mb-3">
+                            <input type="text" id="user-input" class="form-control" placeholder="Type a message..." autocomplete="off">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" id="send-button">Send</button>
+                            </div>
+                        </div>
+                        <div class="chat-options">
+                            <button class="btn btn-secondary option-button" onclick="sendOptionMessage('Tell me about your projects')">Projects</button>
+                            <button class="btn btn-secondary option-button" onclick="sendOptionMessage('Show me your resume')">Resume</button>
+                            <button class="btn btn-secondary option-button" onclick="sendOptionMessage('Contact information')">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Resume</h2>
+                    <a href="Resume-3.pdf" target="_blank" class="btn btn-outline-primary my-3">Download my resume</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="resume border rounded p-3">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <div class="image-container mr-3">
+                                <img src="IMG_5162.JPG" class="rounded-circle" alt="Profile Picture">
+                            </div>
+                            <div class="text-box flex-grow-1">
+                                <h3>About</h3>
+                                <p>Master of Computer Science student at Rice University. Experience in software engineering, SAP SD implementations, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pdf-container my-4">
+                        <iframe src="Resume-3.pdf" class="w-100" height="500px">
+                            This browser does not support PDFs. Please download the PDF to view it: <a href="Resume-3.pdf">Download PDF</a>.
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pranav Donepudi. All rights reserved.</p>
-            <p>
-                <a href="https://www.linkedin.com/in/pranavdonepudi07/" target="_blank">LinkedIn</a> |
-                <a href="mailto:pd53@rice.edu">Email</a> |
-                <a href="tel:+16507594788">Phone</a>
-            </p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+        <footer class="bg-primary text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2024 Pranav Donepudi. All rights reserved.</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/pranavdonepudi07/" class="text-white" target="_blank">LinkedIn</a> |
+                    <a href="mailto:pd53@rice.edu" class="text-white">Email</a> |
+                    <a href="tel:+16507594788" class="text-white">Phone</a>
+                </p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+        </script>
 </body>
+    
+    
 </html>
